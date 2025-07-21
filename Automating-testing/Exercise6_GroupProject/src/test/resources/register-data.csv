@@ -1,0 +1,11 @@
+firstName,lastName,email,gender,mobile,expected
+John,Doe,john.doe@email.com,Male,0123456789,success
+Jane,Smith,jane.smith@email.com,Female,0987654321,success
+Anna,Lee,anna.lee@email.com,Female,0123456789,success
+Bob,Nguyen,bob.nguyen@email.com,Male,0987654321,success
+,Smith,empty.first@email.com,Male,0123456789,failure
+John,,john.empty.last@email.com,Male,0123456789,failure
+Jane,Doe,,Female,0123456789,failure
+Bob,Kim,bob.kim@email.com,,0123456789,failure
+invalid-email,Test,notanemail,Male,0123456789,failure
+Short,Name,short@test.com,Male,123,failure
